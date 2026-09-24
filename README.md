@@ -4,7 +4,8 @@
 
 **Nombre:** León Ramírez Carlos Pavel
 **Proyecto:** Utilería JS  
-**Problema que resuelve:** Esta librería reúne funciones reutilizables para validar datos comunes de formularios web, calcular la edad de una persona y facilitar tareas sencillas de formato y limpieza de datos sin utilizar frameworks.
+**Problema que resuelve:**
+Esta librería reúne funciones reutilizables para validar datos comunes de formularios web, calcular la edad de una persona y facilitar tareas sencillas de formato y limpieza de datos sin utilizar frameworks.
 
 ---
 
