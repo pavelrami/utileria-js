@@ -217,24 +217,9 @@ Guion sugerido:
 
 ---
 
-## GitHub Pages
-
-1. Crea un repositorio público en GitHub.
-2. Sube todos los archivos respetando la estructura.
-3. En GitHub entra a **Settings**.
-4. Selecciona **Pages**.
-5. En **Build and deployment**, elige **Deploy from a branch**.
-6. Selecciona la rama `main` y la carpeta `/ (root)`.
-7. Guarda los cambios.
-8. Espera a que GitHub genere el enlace público.
-
-Después agrega aquí tus enlaces:
-
-**Repositorio:** PENDIENTE  
-**GitHub Pages:** PENDIENTE
 
 ---
 
 ## Autor
 
-Escribe aquí tu nombre completo.
+León Ramírez Carlos Pavel 22161118
