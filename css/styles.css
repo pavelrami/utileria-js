@@ -1,0 +1,150 @@
+:root {
+  --fondo: #f4f6f8;
+  --tarjeta: #ffffff;
+  --texto: #1f2937;
+  --primario: #2563eb;
+  --primario-oscuro: #1d4ed8;
+  --borde: #d1d5db;
+  --error: #b91c1c;
+  --exito: #166534;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+}
+
+.contenedor {
+  width: min(92%, 720px);
+  margin: 40px auto;
+}
+
+.tarjeta {
+  background: var(--tarjeta);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.campo {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: 2px solid rgba(37, 99, 235, 0.22);
+  border-color: var(--primario);
+}
+
+button,
+.boton-enlace {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  background: var(--primario);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover,
+.boton-enlace:hover {
+  background: var(--primario-oscuro);
+}
+
+.acciones {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.mensaje {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  display: none;
+}
+
+.mensaje.error {
+  display: block;
+  background: #fee2e2;
+  color: var(--error);
+}
+
+.mensaje.exito {
+  display: block;
+  background: #dcfce7;
+  color: var(--exito);
+}
+
+.ayuda {
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal.activo {
+  display: flex;
+}
+
+.modal-contenido {
+  width: min(100%, 420px);
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.cerrar {
+  margin-top: 12px;
+  background: #4b5563;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: var(--primario);
+}

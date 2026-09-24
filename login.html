@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utilería JS - Login</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="contenedor">
+    <nav>
+      <a href="index.html">Volver al formulario</a>
+    </nav>
+
+    <section class="tarjeta">
+      <h1>Iniciar sesión</h1>
+      <p>Este login utiliza <strong>validarCorreo</strong> y <strong>validarPassword</strong>.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="campo">
+          <label for="correoLogin">Correo electrónico</label>
+          <input id="correoLogin" type="email" placeholder="persona@correo.com" />
+        </div>
+
+        <div class="campo">
+          <label for="passwordLogin">Contraseña</label>
+          <input id="passwordLogin" type="password" placeholder="Ej. Hola123!" />
+        </div>
+
+        <button type="submit">Ingresar</button>
+        <div id="mensajeLogin" class="mensaje"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/utileria.js"></script>
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    const mensajeLogin = document.getElementById("mensajeLogin");
+
+    function mostrarMensajeLogin(texto, tipo) {
+      mensajeLogin.textContent = texto;
+      mensajeLogin.className = "mensaje " + tipo;
+    }
+
+    loginForm.addEventListener("submit", (evento) => {
+      evento.preventDefault();
+
+      const correo = document.getElementById("correoLogin").value.trim();
+      const password = document.getElementById("passwordLogin").value;
+
+      if (!validarCorreo(correo)) {
+        mostrarMensajeLogin("El correo no es válido.", "error");
+        return;
+      }
+
+      if (!validarPassword(password)) {
+        mostrarMensajeLogin(
+          "La contraseña no cumple los requisitos de seguridad.",
+          "error"
+        );
+        return;
+      }
+
+      mostrarMensajeLogin("Datos de acceso con formato válido.", "exito");
+
+      console.log("Login validado:");
+      console.log("Correo válido:", validarCorreo(correo));
+      console.log("Password válida:", validarPassword(password));
+    });
+  </script>
+</body>
+</html>
