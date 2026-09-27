@@ -170,19 +170,7 @@ console.log(capitalizarNombre("aNA mARÍA"));
 console.log(limpiarTelefono("(951) 123-4567"));
 ```
 
----
 
-## Capturas de pantalla
-
-Agrega aquí tus capturas reales después de ejecutar el proyecto.
-
-Ejemplo:
-
-```md
-![Pruebas en consola](img/consola.png)
-![Formulario funcionando](img/formulario.png)
-![Login funcionando](img/login.png)
-```
 
 
 
