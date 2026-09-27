@@ -184,21 +184,7 @@ Ejemplo:
 ![Login funcionando](img/login.png)
 ```
 
-> Importante: guarda las imágenes dentro de la carpeta `img`.
 
----
-
-## Video demo
-
-Graba un video de máximo 1 minuto y pega aquí el enlace.
-
-**Enlace del video:** PENDIENTE
-
-Guion sugerido:
-
-> “Hola, esta es mi librería Utilería JS. Su objetivo es resolver validaciones comunes de formularios sin utilizar frameworks. Incluye seis funciones obligatorias para validar correos, nombres, números, fechas, mayoría de edad y contraseñas, además de dos funciones propias para capitalizar nombres y limpiar teléfonos. Aquí podemos ver el formulario usando las funciones y un modal que muestra la edad calculada. También tengo una pantalla de login que valida correo y contraseña. Finalmente, en la consola podemos probar cada función y observar sus resultados.”
-
----
 
 ## Estructura del proyecto
 
